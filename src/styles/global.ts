@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   * {
@@ -17,6 +17,10 @@ export default createGlobalStyle`
   body, input, button {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+
+    @media screen and (max-width: 640px) {
+      font-size: 14px;
+    }
   }
 
   h1, h2, h3, h4, h5, h6, strong {
